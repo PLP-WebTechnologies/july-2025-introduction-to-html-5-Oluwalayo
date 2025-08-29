@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Metadata -->
+  <title>Accessible & SEO-Friendly Web Page</title>
+  <meta name="description" content="A simple HTML5 webpage demonstrating semantic structure, accessibility best practices, and SEO basics.">
+
+  <!-- Accessibility -->
+  <meta http-equiv="Content-Language" content="en">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Accessible & SEO-Friendly Web Page</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>
+        This page was created as part of an assignment to practice 
+        <strong>HTML5 semantic tags</strong>, 
+        <em>accessibility best practices</em>, 
+        and <em>SEO principles</em>. 
+        The goal is to make content easy to read for both humans and search engines.
+      </p>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles">
+      <h2>Articles</h2>
+      
+      <article>
+        <h3>Why Semantic HTML Matters</h3>
+        <p>
+          Semantic HTML provides meaning to web content. Elements like 
+          <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, 
+          and <code>&lt;footer&gt;</code> make structure clear for 
+          assistive technologies and search engines.
+        </p>
+      </article>
+
+      <article>
+        <h3>Accessibility Enhancements</h3>
+        <p>
+          Accessibility features, such as descriptive link text, ARIA attributes, 
+          and proper heading order, ensure that users with assistive technologies 
+          can navigate content smoothly.
+        </p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Want to connect? Fill out the form below:
+      </p>
+      <form aria-label="Contact Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Accessible Web Assignment | Built with HTML5</p>
+  </footer>
+</body>
+</html>
