@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Assignment</title>
+  <meta name="description" content="An enhanced HTML5 form with semantic structure, lists, tables, media, and validation.">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Enhanced Form with HTML5 Features</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#info">Information</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content">
+
+    <!-- Information Section -->
+    <section id="info">
+      <h2>Information</h2>
+      <p>This page demonstrates the use of <strong>lists</strong>, <strong>tables</strong>, <strong>media</strong>, and an <strong>enhanced form</strong> with validation.</p>
+
+      <!-- List Example -->
+      <h3>Key Features Included:</h3>
+      <ul>
+        <li>Semantic HTML5 structure</li>
+        <li>Accessible form fields</li>
+        <li>Built-in validation</li>
+        <li>Multimedia elements</li>
+      </ul>
+
+      <!-- Table Example -->
+      <h3>Sample Data Table:</h3>
+      <table border="1">
+        <caption>User Registration Stats</caption>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>New Users</th>
+            <th>Active Users</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>120</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>95</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>150</td>
+            <td>110</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+      <h2>Media Content</h2>
+      <p>Here is an image and an audio file embedded in the page:</p>
+      
+      <!-- Image -->
+      <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Placeholder Example Image">
+        <figcaption>A sample placeholder image</figcaption>
+      </figure>
+
+      <!-- Audio -->
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+      <h2>Enhanced HTML5 Form</h2>
+      <form aria-label="Enhanced User Form" autocomplete="on">
+        
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email"><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6"><br><br>
+
+        <!-- Readonly Field -->
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" name="userid" value="USER12345" readonly><br><br>
+
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="canada">Canada</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Write a short introduction..." required></textarea><br><br>
+
+        <!-- File Upload -->
+        <label for="resume">Upload Resume (PDF only):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Enhanced Form Assignment | Built with HTML5</p>
+  </footer>
+</body>
+</html>
